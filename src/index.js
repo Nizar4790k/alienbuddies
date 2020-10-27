@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './Hello';
 import 'tachyons';
-
 import './index.css';
+import  {robots}  from './robots';
+import CardList from "./CardList"
 
-ReactDOM.render(
-  null,
+
+ReactDOM.render(<CardList robots={robots} />,
   document.getElementById('root')
 );
