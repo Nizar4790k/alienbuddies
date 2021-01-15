@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/alienbuddies/static/css/main.bab1b265.chunk.css",
-    "main.js": "/alienbuddies/static/js/main.c2977944.chunk.js",
-    "main.js.map": "/alienbuddies/static/js/main.c2977944.chunk.js.map",
+    "main.js": "/alienbuddies/static/js/main.bd7e5bb1.chunk.js",
+    "main.js.map": "/alienbuddies/static/js/main.bd7e5bb1.chunk.js.map",
     "runtime-main.js": "/alienbuddies/static/js/runtime-main.83839d0b.js",
     "runtime-main.js.map": "/alienbuddies/static/js/runtime-main.83839d0b.js.map",
     "static/css/2.31461e4f.chunk.css": "/alienbuddies/static/css/2.31461e4f.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.fc3636b1.chunk.js",
     "static/css/main.bab1b265.chunk.css",
-    "static/js/main.c2977944.chunk.js"
+    "static/js/main.bd7e5bb1.chunk.js"
   ]
 }
