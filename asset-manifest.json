@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/alienbuddies/static/css/main.bab1b265.chunk.css",
-    "main.js": "/alienbuddies/static/js/main.bd7e5bb1.chunk.js",
-    "main.js.map": "/alienbuddies/static/js/main.bd7e5bb1.chunk.js.map",
+    "main.css": "/alienbuddies/static/css/main.7da26b30.chunk.css",
+    "main.js": "/alienbuddies/static/js/main.f7dba63a.chunk.js",
+    "main.js.map": "/alienbuddies/static/js/main.f7dba63a.chunk.js.map",
     "runtime-main.js": "/alienbuddies/static/js/runtime-main.83839d0b.js",
     "runtime-main.js.map": "/alienbuddies/static/js/runtime-main.83839d0b.js.map",
     "static/css/2.31461e4f.chunk.css": "/alienbuddies/static/css/2.31461e4f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.fc3636b1.chunk.js.map": "/alienbuddies/static/js/2.fc3636b1.chunk.js.map",
     "index.html": "/alienbuddies/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/alienbuddies/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.bab1b265.chunk.css.map": "/alienbuddies/static/css/main.bab1b265.chunk.css.map",
+    "static/css/main.7da26b30.chunk.css.map": "/alienbuddies/static/css/main.7da26b30.chunk.css.map",
     "static/js/2.fc3636b1.chunk.js.LICENSE.txt": "/alienbuddies/static/js/2.fc3636b1.chunk.js.LICENSE.txt",
     "static/media/App.css": "/alienbuddies/static/media/SEGA.47b4bfa9.woff"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.83839d0b.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.fc3636b1.chunk.js",
-    "static/css/main.bab1b265.chunk.css",
-    "static/js/main.bd7e5bb1.chunk.js"
+    "static/css/main.7da26b30.chunk.css",
+    "static/js/main.f7dba63a.chunk.js"
   ]
 }
