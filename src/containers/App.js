@@ -34,8 +34,8 @@ class App extends Component {
 
         const {aliens,searchfield}=this.state;
 
-        const filteredaliens = aliens.filter(robot=>{
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase())
+        const filteredaliens = aliens.filter(alien=>{
+            return alien.name.toLowerCase().includes(searchfield.toLowerCase())
         })
 
 
