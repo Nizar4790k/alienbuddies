@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useEffect, useState } from 'react';
 import CardList from '../components/CardList'
 import SearchBox from '../components/SearchBox'
 import './App.css'
@@ -6,68 +6,68 @@ import Scroll from '../components/Scroll'
 
 
 
+const App = () => {
 
-class App extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            aliens: [],
-            searchfield: ''
-        }
-    }
+    const [aliens, setAliens] = useState([]);
+    const [searchfield, setSearchField] = useState('');
 
-    componentDidMount(){
-       
-        this.fetchAliens();
-       
-        /*
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response =>response.json())
-        .then(users=> this.setState({aliens:users})); */
 
-    }
 
-    async fetchAliens() {
-        const response =  await  fetch('https://jsonplaceholder.typicode.com/users');
+    // Async way
+
+    async function fetchAliens() {
+
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const users = await response.json();
-        this.setState({aliens:users});
+        setAliens(users);
+
+
+    }
+
+    useEffect(() => {
+
+        /*
+
+        Sync way
         
+       fetch('https://jsonplaceholder.typicode.com/users')
+       .then(response =>response.json())
+       .then(users=> this.setState({aliens:users})); */
+
+        fetchAliens();
+    })
 
 
+
+    function onSearchChange(event) {
+        setSearchField(event.target.value);
     }
-    
-    onSearchChange=(event) =>{
-        this.setState({searchfield:event.target.value});
-    }
-
-    render() {
 
 
-        const {aliens,searchfield}=this.state;
 
-        const filteredaliens = aliens.filter(alien=>{
-            return alien.name.toLowerCase().includes(searchfield.toLowerCase())
-        })
+    const filteredaliens = aliens.filter(alien => {
+        return alien.name.toLowerCase().includes(searchfield.toLowerCase())
+    })
 
 
-        return (!aliens.length) ?
-            <h1>Loading</h1> 
-            :
-            (<div className="tc">
+    return (!aliens.length) ?
+        <h1>Loading</h1>
+        :
+        (<div className="tc">
             <h1 className="f1">AlienBuddies</h1>
-            <SearchBox searchChange={this.onSearchChange} />
+            <SearchBox searchChange={onSearchChange} />
             <Scroll>
-            <CardList aliens={filteredaliens} />
+                <CardList aliens={filteredaliens} />
             </Scroll>
-            </div>
+        </div>
         )
 
-        }
 
 
-     
-    }
+
+
+}
 
 
 export default App;
